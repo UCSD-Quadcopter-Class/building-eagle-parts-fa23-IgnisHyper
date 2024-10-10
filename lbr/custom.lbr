@@ -108,6 +108,59 @@
 <wire x1="2.4" y1="-1.4" x2="2.4" y2="1.4" width="0.05" layer="39"/>
 <wire x1="2.4" y1="1.4" x2="-2.4" y2="1.4" width="0.05" layer="39"/>
 </package>
+<package name="MOSFETSI2302CDS-T1-E3CT-ND">
+<smd name="G" x="-0.95" y="-1.15" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
+<smd name="S" x="0.95" y="-1.15" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
+<smd name="D" x="0" y="0.875" dx="2.9" dy="2.05" layer="1" stop="no" cream="no"/>
+<polygon width="0.1524" layer="31" pour="solid">
+<vertex x="-0.2033" y="0.6987"/>
+<vertex x="0.2033" y="0.6987"/>
+<vertex x="0.2033" y="1.2703"/>
+<vertex x="-0.2033" y="1.2703"/>
+</polygon>
+<polygon width="0.1524" layer="31" pour="solid">
+<vertex x="0.7467" y="-1.2703"/>
+<vertex x="1.1533" y="-1.2703"/>
+<vertex x="1.1533" y="-0.6987"/>
+<vertex x="0.7467" y="-0.6987"/>
+</polygon>
+<polygon width="0.1524" layer="29" pour="solid">
+<vertex x="-1.1533" y="-1.2703"/>
+<vertex x="-0.7467" y="-1.2703"/>
+<vertex x="-0.7467" y="-0.6987"/>
+<vertex x="-1.1533" y="-0.6987"/>
+</polygon>
+<polygon width="0.1524" layer="29" pour="solid">
+<vertex x="-0.2033" y="0.6987"/>
+<vertex x="0.2033" y="0.6987"/>
+<vertex x="0.2033" y="1.2703"/>
+<vertex x="-0.2033" y="1.2703"/>
+</polygon>
+<polygon width="0.1524" layer="29" pour="solid">
+<vertex x="0.7467" y="-1.2703"/>
+<vertex x="1.1533" y="-1.2703"/>
+<vertex x="1.1533" y="-0.6987"/>
+<vertex x="0.7467" y="-0.6987"/>
+</polygon>
+<polygon width="0.1524" layer="31" pour="solid">
+<vertex x="-1.1533" y="-1.2703"/>
+<vertex x="-0.7467" y="-1.2703"/>
+<vertex x="-0.7467" y="-0.6987"/>
+<vertex x="-1.1533" y="-0.6987"/>
+</polygon>
+<text x="0" y="3" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
+<polygon width="0.1524" layer="51" pour="solid">
+<vertex x="-1.3238" y="-0.5238"/>
+<vertex x="1.3238" y="-0.5238"/>
+<vertex x="1.3238" y="0.5238"/>
+<vertex x="-1.3238" y="0.5238"/>
+</polygon>
+<wire x1="-1.9" y1="2.4" x2="-1.9" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="-1.9" y1="-2.4" x2="1.9" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="1.9" y1="-2.4" x2="1.9" y2="2.4" width="0.05" layer="39"/>
+<wire x1="1.9" y1="2.4" x2="-1.9" y2="2.4" width="0.05" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -145,6 +198,30 @@
 <wire x1="0.762" y1="2.286" x2="0.508" y2="2.032" width="0.1524" layer="94"/>
 <text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MOSFET">
+<pin name="G" x="-6.35" y="-5.08" visible="pad" length="middle"/>
+<pin name="D" x="6.35" y="10.16" visible="pad" length="middle" rot="R270"/>
+<pin name="S" x="6.35" y="-10.16" visible="pad" length="middle" rot="R90"/>
+<wire x1="1.27" y1="6.35" x2="1.27" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-3.81" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="6.35" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="6.35" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0" x2="6.35" y2="0" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="0" x2="6.35" y2="-5.08" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94" pour="solid">
+<vertex x="2.68810625" y="0"/>
+<vertex x="3.7338" y="-0.627415625"/>
+<vertex x="3.7338" y="0.627415625"/>
+</polygon>
+<wire x1="1.27" y1="0" x2="2.8975125" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="5.08" width="0.1524" layer="94"/>
+<text x="-2.54" y="7.62" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.778" layer="96" align="center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -184,6 +261,27 @@
 <attribute name="CREATOR" value="Abel Preciado"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="160-1178-1-ND"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOSFET" prefix="Q" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="N-CHANNEL_MOSFET" package="MOSFETSI2302CDS-T1-E3CT-ND">
+<connects>
+<connect gate="G$1" pin="D" pad="D"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Abel Preciado"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND"/>
 </technology>
 </technologies>
 </device>
